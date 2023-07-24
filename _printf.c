@@ -24,7 +24,12 @@ int _printf(const char *format, ...)
 {
 	int i = 0; j, count = 0;
 	va_list arg_list;
-	print print_var[] = {{"c", print_char}, {"s", print_string}, {"i", print_int}, {"d", print_int}}
+	print print_var[] = {
+		{"c", print_char},
+	       	{"s", print_string},
+	       	{"i", print_int},
+	       	{"d", print_int},
+		{NULL, NULL}};
 
 	va_start(arg_list, format);
 	for (i = 0; format [i] != '\0'; i++)
