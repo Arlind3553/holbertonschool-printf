@@ -6,7 +6,8 @@
 int print_char (va_list char_li);
 {
 	char ch = va_arg(char_li, int);
-	_putchar(ch);
+
+	putchar (ch);
 	return (1);
 }
 
