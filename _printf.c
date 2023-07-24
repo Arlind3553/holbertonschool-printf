@@ -6,7 +6,12 @@
 int print_char (va_list char_li);
 {
 	char ch = va_arg(char_li, int);
+<<<<<<< HEAD
 	putchar(ch);
+=======
+
+	putchar (ch);
+>>>>>>> 53efff572e7f53cea2581e012a043852b7bb62fe
 	return (1);
 }
 int print_string(va_list string_li)
