@@ -38,8 +38,8 @@ int _printf(const char *format, ...)
 		{
 			for (j = 0; print_var[j].Format != '\0'; j++)
 			{
-				if(format[i + 1] == print_var[j]Format[i])
-
+				if (format[i + 1] == print_var[j].Format[i])
+					count += print_var[j].Format[i];
 			}
 		}
 	}
