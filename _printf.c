@@ -15,7 +15,7 @@ int print_string(va_list string_li)
 	int i;
 
 	str = va_arg(string_li, char*);
-	for(; str[i] != '/0'; i++)
+	for(i = 0; str[i] != '/0'; i++)
 		putchar(str[i]);
 	return (i);
 
@@ -31,6 +31,10 @@ int _printf(const char *format, ...)
 	       	{"d", print_int},
 		{NULL, NULL}};
 
+	if (format == NULL)
+		return (-1);
+
+
 	va_start(arg_list, format);
 	for (i = 0; format [i] != '\0'; i++)
 	{
@@ -42,6 +46,7 @@ int _printf(const char *format, ...)
 					count += print_var[j].Format[i];
 			}
 		}
+	if (format[i + 1])
 	}
 
 }
