@@ -3,10 +3,11 @@
 #include <stdarg.h>
 #include <stddef.h>
 /**
- * *struct print - struct print
+ *struct print_struct - print_struct
  *@f: identifier of the function
- *@print: function associated with the identifier
+ *@var_type: function associated with the identifier
  */
+
 typedef struct print_struct
 {
 	char *var_type;
