@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdarg.h>
-#include <stddef.h>
+#include <stdef.h>
 /**
  * *struct print - struct print
  *@f: identifier of the function
