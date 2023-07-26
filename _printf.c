@@ -33,10 +33,9 @@ int _printf(const char *format, ...)
 	int i = 0, j, count = 0;
 	va_list arg_list;
 	p_struct print_var[] = {
-		{"c", print_char}, 
+		{"c", print_char},
 		{"s", print_string},
 		{NULL, NULL}};
-
 	if (format == NULL)
 		return (-1);
 	va_start(arg_list, format);
@@ -63,7 +62,6 @@ int _printf(const char *format, ...)
 			else if (format[i + 1] == '\0')
 				return (-1);
 			i++;
-
 		}
 		else
 			count += _putchar(format[i]);
