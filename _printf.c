@@ -37,6 +37,32 @@ int print_string(va_list string)
 	}
 	return (i);
 }
+int print_int(va_list arg_list)
+{
+	long int i;
+	i = (long int) va_arg(arg_list, int);
+	if (i < 0)
+		return (intt(i, 2));
+	return (intt(i, 1));
+
+}
+int intt(long int n, int count)
+{
+	int new = count;
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	if (n / 10)
+	{
+		new = intt(n / 10, count + 1);
+	}
+	_putchar (n % 10 + '0');
+	return (new);
+
+
+}
 
 /**
  * _printf - print everything
@@ -48,7 +74,7 @@ int _printf(const char *format, ...)
 	int i = 0, j, count = 0;
 	va_list arg_list;
 	p_struct print_var[] = {{"c", print_char}, {"s", print_string},
-	{"i", change_int}, {"d", change_int}, {NULL, NULL}};
+	{"i", print_int}, {"d", print_int}, {NULL, NULL}};
 
 	if (format == NULL)
 		return (-1);
