@@ -37,6 +37,11 @@ int print_string(va_list string)
 	}
 	return (i);
 }
+/**
+ * print_int - take the value of int
+ * @arg_list: argument to change
+ * Return: function to print int a.k.a len
+ */
 int print_int(va_list arg_list)
 {
 	long int i;
@@ -47,6 +52,12 @@ int print_int(va_list arg_list)
 	return (intt(i, 1));
 
 }
+/**
+ * intt - print int
+ * @n: number to print
+ * @count: len of int
+ * Return: new
+ */
 int intt(long int n, int count)
 {
 	int new = count;
