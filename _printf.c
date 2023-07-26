@@ -30,8 +30,6 @@ int _printf(const char *format, ...)
 	p_struct print_var[] = {
 	{"c", print_char},
 	{"s", print_string},
-	{"i", change_int},
-	{"d", change_int},
 	{NULL, NULL}};
 	if (format == NULL)
 		return (-1);
