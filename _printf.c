@@ -36,6 +36,7 @@ int print_string(va_list string)
 	}
 	return (i);
 }
+<<<<<<< HEAD
 /**
  * intt - main function
  * @n:number
@@ -46,12 +47,18 @@ int intt(long int n, int count)
 {
 	int new = count;
 
+=======
+int intt(long int n, int count)
+{
+	int new = count;
+>>>>>>> b31998ac4ca9b329a25d34cd99f00608b4f138a5
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -1 * n;
 	}
 	if (n / 10)
+<<<<<<< HEAD
 		new = intt(n / 10, count + 1);
 	_putchar(n % 10 + '0');
 	return (new);
@@ -65,16 +72,28 @@ int print_int(va_list arg_list)
 {
 	long int i;
 
+=======
+		new = intt(n/10, count + 1);
+	_putchar(n % 10 + '0');
+	return (new);
+}
+int print_int(va_list arg_list)
+{
+	long int i;
+>>>>>>> b31998ac4ca9b329a25d34cd99f00608b4f138a5
 	i = va_arg(arg_list, int);
 	if (i < 0)
 		return (intt(i, 2));
 	return (intt(i, 1));
 }
+<<<<<<< HEAD
 /**
  * _printf - print everything
  * @format: what to print
  * Return: 0 if succesful
  */
+=======
+>>>>>>> b31998ac4ca9b329a25d34cd99f00608b4f138a5
 int _printf(const char *format, ...)
 {
 	int i = 0, j, count = 0;
