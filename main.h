@@ -15,10 +15,10 @@ typedef struct print_struct
 } p_struct;
 
 int _putchar (char c);
-int print_char (va_list char_li);
-int print_string(va_list string_li);
-int print_int (va_list int_li);
+int print_char (va_list cha);
+int print_string(va_list string);
+int print_int (va_list arg_list);
 int _printf(const char *format, ...);
 
 
-#endif MAIN_H
+#endif
