@@ -1,31 +1,19 @@
 #include "main.h"
-#include <limits.h>
+
 #include <stdio.h>
 #include <stdarg.h>
 
-
 int print_char(va_list cha)
-{
-	char ch = va_arg(cha, int);
-	putchar (ch);
-	return (1);
-}
-
-int print_string(va_list string_li)
 {
 	char ch;
 	ch = va_arg(cha, int);
 	_putchar(ch);
 	return (1);
 }
-
 int print_string(va_list string)
 {
 	char *str;
 	int i = 0;
-	str = va_arg(string_li, char*);
-	for (i = 0; str[i] != '/0'; i++)
-		putchar (str[i]);
 	str = va_arg(string, char *);
 	if (str == NULL)
 		str = "(null)";
@@ -35,26 +23,19 @@ int print_string(va_list string)
 	}
 	return (i);
 }
-
 int _printf(const char *format, ...)
 {
 	int i = 0, j, count = 0;
 	va_list arg_list;
-	print print_var[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"i", print_int},
-		{"d", print_int},
-		{NULL, NULL}
-	};
 	p_struct print_var[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{NULL, NULL}};
+	{"c", print_char},
+	{"s", print_string},
+	{"i", change_int},
+	{"d", change_int},
+	{NULL, NULL}};
 	if (format == NULL)
 		return (-1);
 	va_start(arg_list, format);
-	for (i = 0; format[i] != '\0'; i++)
 	for (i = 0; format != NULL && format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
