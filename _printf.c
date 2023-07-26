@@ -41,8 +41,8 @@ int print_int(va_list arg_list)
 	long int i;
 	i = va_arg(arg_list, int);
 	if (i < 0)
-		return (intt(i, 1));
-	return (intt(i, 0));
+		return (intt(i, 2));
+	return (intt(i, 1));
 }
 int _printf(const char *format, ...)
 {
