@@ -40,6 +40,7 @@ int print_string(va_list string)
 int print_int(va_list arg_list)
 {
 	long int i;
+
 	i = (long int) va_arg(arg_list, int);
 	if (i < 0)
 		return (intt(i, 2));
@@ -49,6 +50,7 @@ int print_int(va_list arg_list)
 int intt(long int n, int count)
 {
 	int new = count;
+
 	if (n < 0)
 	{
 		_putchar('-');
