@@ -3,7 +3,8 @@
 #include <string.h>
 
 int main() {
-    _printf("%i  \n", 7);
-    printf("%i \n", 7);
+    int a = _printf("%i  \n", 7);
+    int b = printf("%i \n", 7);
+    printf("%i %i",a, b);
     return 0;
 }

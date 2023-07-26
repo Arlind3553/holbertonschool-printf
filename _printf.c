@@ -29,7 +29,7 @@ int intt(long int n, int count)
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		n = -1 * n;
 	}
 	if (n / 10)
 		intt(n/10, count + 1);
@@ -41,8 +41,8 @@ int print_int(va_list arg_list)
 	long int i;
 	i = va_arg(arg_list, int);
 	if (i < 0)
-		return (intt(i, 2));
-	return (intt(i, 1));
+		return (intt(i, 1));
+	return (intt(i, 0));
 }
 int _printf(const char *format, ...)
 {
