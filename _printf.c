@@ -32,7 +32,7 @@ int intt(long int n, int count)
 		n = -1 * n;
 	}
 	if (n / 10)
-		intt(n/10, count + 1);
+		new = intt(n/10, count + 1);
 	_putchar(n % 10 + '0');
 	return (new);
 }
