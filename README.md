@@ -32,6 +32,7 @@ int main() {
 Testing has been carried out for various scenarios to ensure the correct behavior of the _printf function. Unit tests have been written to verify its output for different data types and edge cases.
 
 ## Commits:
+
 The commits have been made in a structured and meaningful way, with clear and concise commit messages explaining the changes made.
 
 ## Clean Code:
