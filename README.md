@@ -40,6 +40,7 @@ The commits have been made in a structured and meaningful way, with clear and co
 The code follows clean coding practices, with appropriate comments, variable names, and function names that convey their purpose clearly.
 
 ## Learning Objectives:
+
 The primary learning objectives of this project include:
 1- Understanding data structures (array of structs) and algorithms required to implement the _printf function.
 2-Using pointers to functions to handle different conversion specifiers.
