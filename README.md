@@ -53,9 +53,11 @@ The primary learning objectives of this project include:
 The program uses an array of structs to map each conversion specifier to the corresponding function that handles it. This approach provides a modular and organized way to manage different specifiers.
 
 ## Array of Struct with Pointers to Function:
+
 The array of structs contains information about each conversion specifier, including its character representation and a pointer to the function responsible for handling that specifier.
 
 ## Basic %s Function:
+
 The _printf function includes a basic implementation to handle the %s conversion specifier, allowing it to print strings.
 
 
