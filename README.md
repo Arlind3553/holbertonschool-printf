@@ -36,6 +36,7 @@ Testing has been carried out for various scenarios to ensure the correct behavio
 The commits have been made in a structured and meaningful way, with clear and concise commit messages explaining the changes made.
 
 ## Clean Code:
+
 The code follows clean coding practices, with appropriate comments, variable names, and function names that convey their purpose clearly.
 
 ## Learning Objectives:
