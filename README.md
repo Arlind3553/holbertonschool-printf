@@ -49,6 +49,7 @@ The primary learning objectives of this project include:
 5-Distributing the workload among team members and collaborating effectively on the project.
 
 ## Structure and Algorithm:
+
 The program uses an array of structs to map each conversion specifier to the corresponding function that handles it. This approach provides a modular and organized way to manage different specifiers.
 
 ## Array of Struct with Pointers to Function:
