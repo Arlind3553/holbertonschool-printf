@@ -34,11 +34,11 @@ The code follows clean coding practices, with appropriate comments, variable nam
 
 ## Learning Objectives:
 The primary learning objectives of this project include:
-- Understanding data structures (array of structs) and algorithms required to implement the _printf function.
-- Using pointers to functions to handle different conversion specifiers.
-- Implementing basic functionality for %s conversion specifier to print strings.
-- Gaining knowledge of the main program flow and control structures.
-- Distributing the workload among team members and collaborating effectively on the project.
+1- Understanding data structures (array of structs) and algorithms required to implement the _printf function.
+2-Using pointers to functions to handle different conversion specifiers.
+3-Implementing basic functionality for %s conversion specifier to print strings.
+4-Gaining knowledge of the main program flow and control structures.
+5-Distributing the workload among team members and collaborating effectively on the project.
 
 ## Structure and Algorithm:
 The program uses an array of structs to map each conversion specifier to the corresponding function that handles it. This approach provides a modular and organized way to manage different specifiers.
