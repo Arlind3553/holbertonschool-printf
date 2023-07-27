@@ -1,4 +1,3 @@
-# holbertonschool-printf
 ## C-Printf
 
 ## Description:
