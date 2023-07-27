@@ -16,8 +16,8 @@ To use the _printf function in your code, include the header file printf.h in yo
 
 ## Examples:
 Here are some examples of how to use the _printf function
-#include "printf.h"
 
+#include "printf.h"
 int main() {
     _printf("Hello, %s! This is a %c example. Percent sign: %%\n", "John", 'c');
     return 0;
