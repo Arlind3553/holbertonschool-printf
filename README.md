@@ -13,6 +13,7 @@ gcc -o main main.c printf.c
 To use the _printf function in your code, include the header file printf.h in your source file.
 
 ## Requirements:
+
 1- C Compiler (e.g., gcc)
 2- Standard C Library (stdio.h, stdarg.h)
 
