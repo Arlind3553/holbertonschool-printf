@@ -1,5 +1,5 @@
 # holbertonschool-printf
-# C-Printf
+## C-Printf
 
 ## Description:
 This project aims to implement a program that includes a function called "printf" with limited functionality to handle conversion specifiers  %c , %s, and %%. The function will print formatted output to the standard output stream (stdout).
